@@ -1,0 +1,21 @@
+button {
+	width:50px;
+	height: 25px;
+}
+
+.exo5-enfant {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.exo5-enfant p {
+    color: black;
+}
+
+.bouttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}

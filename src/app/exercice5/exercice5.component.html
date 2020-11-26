@@ -1,0 +1,8 @@
+<div class="exo">
+    <h3>Mise en place des décorateurs Output, Input et EvenEmitter</h3>
+    <app-exercice5-enfant
+        [compteur]="compteur"
+        (action)="updateCompteur($event)"
+    ></app-exercice5-enfant>
+    <p class="resul">Résultat du compteur : {{ compteurModifie }}</p>
+</div>

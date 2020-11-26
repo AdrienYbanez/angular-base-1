@@ -5,7 +5,8 @@ h1 {
 
 .main-container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 32px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,18 +28,58 @@ h1 {
 
 .exos {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     margin: 40px 0;
-    padding: 0;
+    padding: 16px;
+    display: grid;
+    grid-row-gap: 32px;
+    grid-column-gap: 16px;
+    grid-template-rows: 300px;
+    grid-auto-rows: 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "exo1 exo2 exo3 exo4"
+    "exo5 exo6 exo7 exo8"
+    ;
+}
+
+.exo1 {
+    grid-area: 'exo1';
+}
+
+.exo2 {
+    grid-area: 'exo2';
+}
+
+.exo3 {
+    grid-area: 'exo3';
+}
+
+.exo4 {
+    grid-area: 'exo4';
+}
+
+.exo5 {
+    grid-area: 'exo5';
+}
+
+.exo6 {
+    grid-area: 'exo6';
+}
+
+.exo7 {
+    grid-area: 'exo7';
+}
+
+.exo7 {
+    grid-area: 'exo8';
 }
 
 .card-exo {
     background-color: #fafafa;
     width: 100%;
-    min-height: 200px;
-    margin: 8px;
-    padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 8px;
     border-radius: 4px;
 }
 
